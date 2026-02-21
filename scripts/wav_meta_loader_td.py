@@ -1,14 +1,11 @@
 """
-TouchDesigner: load Reaper markers/regions from WAV cue chunks into a Table DAT.
+TouchDesigner: load markers/regions from WAV cue chunks into a Table DAT.
 
 Unified table: index | cue_id | position | end | length | label
-- index: 1-based time order. cue_id: Reaper/WAV cue ID (creation order).
+- index: 1-based time order. cue_id: WAV cue ID (creation order).
 - Markers (point): position, end=position, length=0, label
 - Regions (range): position, end, length=end-position, label
 
-Usage:
-  Create COMP with: File (str), Refresh (pulse), meta_out (Table DAT).
-  load_meta(parent(), op('meta_out'))
 """
 
 import struct
