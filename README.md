@@ -1,10 +1,10 @@
-# TD-WAV_Cue_Importer
+# WAV_Cue_Importer
 
 
 
 ## Description
 
-TouchDesigner Component for Importing Cue Metadata from .WAV Files. This includes Markers/Cue Points (Index, Position in s, comment/label) and Loops/Areas/Regions (Index, Start Position in s, End Position in s, Length in s, Comment/label). They're called 'Markers' & 'Regions' in Reaper and 'Markers' & 'Cycle Markers' in Cubase. In both DAWs, you can set the to-be-exported WAV File to include Markers (see Fig. 4. and Fig. 5). The tox component reads that Metadata (Cue, Labl, Ltxt, and Smpl chunks) from the .WAV File itself and writes it into structured DAT tables (see Fig. 1). Only tested with Reaper & Cubase, might work aswell with other DAWs that include similiar WAV File export options.
+TouchDesigner Component for reading CUE Chunk of WAV Filess. This includes Markers/Cue Points (Index, Position in s, comment/label) and Loops/Areas/Regions (Index, Start Position in s, End Position in s, Length in s, Comment/label). 
 
 Notes:
 - the order of imported cues (the assignment of cue_id by the DAWs Audio Render) - seems to differ from reaper to cubase:
